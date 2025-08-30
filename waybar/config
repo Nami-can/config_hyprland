@@ -1,0 +1,64 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 42,
+    "margin-top": 8,
+    "margin-bottom": 8,
+    "margin-left": 12,
+    "margin-right": 12,
+    "spacing": 8,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "network",
+        "battery"
+    ],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "", 
+            "4": "",
+            "5": "",
+            "default": "",
+            "active": "",
+            "urgent": ""
+        },
+        "on-click": "activate",
+        "all-outputs": true
+    },
+
+    "clock": {
+        "format": " {:%H:%M}",
+        "tooltip-format": " {:%A, %d %B %Y}",
+        "interval": 1
+    },
+
+    "network": {
+        "format-wifi": " {essid}",
+        "format-disconnected": " No WiFi",
+        "tooltip-format": " {essid}\n↓{bandwidthDownBits} ↑{bandwidthUpBits}",
+        "max-length": 20
+    },
+
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "tooltip-format": "🔋 {capacity}% ({time})"
+    }
+}

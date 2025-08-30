@@ -1,0 +1,136 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "/home/disney/Загрузки/photo_2025-08-26_01-32-43.jpg",
+    "type": "kitty",
+    "height": 10,
+    "width": 20,
+    "padding": {
+      "top": 1
+    }
+  },
+  "display": {
+    "separator": " -> "
+  },
+  "modules": [
+    "break",
+    {
+      "type": "title",
+      "format": "     私のシステムはゼロです     "
+    },
+    {
+      "type": "custom",
+      "format": "╭─────────────────────────────────────╮ "
+    },
+    // --- СИСТЕМНАЯ ИНФОРМАЦИЯ ---
+    {
+      "type": "os",
+      "key": " ", // Иконка Arch Linux, измените под свой дистрибутив
+      "keyColor": "green"
+    },
+    {
+      "type": "host",
+      "key": "󰍹 ",
+      "keyColor": "blue"
+    },
+    {
+      "type": "kernel",
+      "key": " ",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "uptime",
+      "key": "󰔛 ",
+      "keyColor": "green"
+    },
+    // --- АППАРАТНОЕ ОБЕСПЕЧЕНИЕ ---
+    {
+      "type": "cpu",
+      "key": " ",
+      "keyColor": "cyan",
+      "format": "{name}" // Показывает модель CPU
+    },
+    {
+      "type": "gpu",
+      "key": "󰿵 ",
+      "keyColor": "magenta",
+      "format": "{name}" // Показывает модель GPU
+    },
+    {
+      "type": "memory",
+      "key": "󰍛 ",
+      "keyColor": "magenta",
+      "format": "{1} / {2}"
+    },
+    {
+      "type": "disk",
+      "key": "󰋊 ",
+      "keyColor": "yellow",
+      "format": "{1} / {2} ({3}%)", // Использовано / Всего (Процент)
+      "path": "/" // Мониторим корневой раздел
+    },
+    // --- ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ---
+    {
+      "type": "wm",
+      "key": " ",
+      "keyColor": "blue"
+    },
+    {
+      "type": "de",
+      "key": "󰇄 ", // Иконка Desktop Environment
+      "keyColor": "red"
+    },
+    {
+      "type": "shell",
+      "key": " ",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "terminal",
+      "key": " ",
+      "keyColor": "blue"
+    },
+    {
+      "type": "terminalfont",
+      "key": "󰚌 ",
+      "keyColor": "white"
+    },
+    {
+      "type": "packages",
+      "key": "󰏖 ",
+      "keyColor": "yellow"
+    },
+    // --- БАТАРЕЯ (если актуально) ---
+    /*
+    {
+      "type": "battery",
+      "key": "󰁹 ",
+      "keyColor": "red",
+      "format": "{1}% ({2})" // Процент, статус (Заряжается/Разряжается)
+    },
+    */
+    // --- СЕТЬ ---
+    /*
+    {
+      "type": "localip",
+      "key": "󰌗 ",
+      "keyColor": "blue"
+    },
+    {
+      "type": "publicip",
+      "key": "󰅃 ",
+      "keyColor": "green"
+    },
+    */
+    // --- ЗАВЕРШАЮЩИЕ ЭЛЕМЕНТЫ ---
+    {
+      "type": "custom",
+      "format": "╰─────────────────────────────────────╯ "
+    },
+    {
+      "type": "custom",
+      "format": "   \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m"
+    },
+    "break"
+  ]
+}

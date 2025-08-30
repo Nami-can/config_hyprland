@@ -1,0 +1,112 @@
+* {
+    border: none;
+    border-radius: 16px;
+    font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font";
+    font-size: 13px;
+    font-weight: 500;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(30, 32, 40, 0.6); /* Полупрозрачный темный фон */
+    color: #c8d3f5;
+}
+
+/* Рабочие пространства */
+#workspaces {
+    background: rgba(122, 162, 247, 0.15);
+    border-radius: 20px;
+    padding: 0 8px;
+    margin: 0 2px;
+}
+
+#workspaces button {
+    color: #6e6a86;
+    background: transparent;
+    padding: 0 8px;
+    margin: 0 2px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+    color: #7aa2f7;
+    background: rgba(122, 162, 247, 0.2);
+}
+
+#workspaces button:hover {
+    background: rgba(122, 162, 247, 0.1);
+}
+
+#workspaces button.urgent {
+    color: #ff757f;
+    background: rgba(255, 117, 127, 0.2);
+}
+
+/* Часы */
+#clock {
+    background: rgba(134, 142, 250, 0.15);
+    color: #868dfa;
+    border-radius: 20px;
+    padding: 0 16px;
+    margin: 0 2px;
+    font-weight: 600;
+}
+
+/* WiFi */
+#network {
+    background: rgba(158, 206, 106, 0.15);
+    color: #9ece6a;
+    border-radius: 20px;
+    padding: 0 16px;
+    margin: 0 2px;
+}
+
+#network.disconnected {
+    color: #ff757f;
+    background: rgba(255, 117, 127, 0.15);
+}
+
+/* Батарея */
+#battery {
+    background: rgba(255, 202, 106, 0.15);
+    color: #ffca6a;
+    border-radius: 20px;
+    padding: 0 16px;
+    margin: 0 2px;
+}
+
+#battery.warning {
+    color: #ffca6a;
+    background: rgba(255, 202, 106, 0.25);
+}
+
+#battery.critical {
+    color: #ff757f;
+    background: rgba(255, 117, 127, 0.25);
+}
+
+#battery.charging {
+    color: #9ece6a;
+    background: rgba(158, 206, 106, 0.25);
+}
+
+/* Анимации при наведении */
+#clock:hover,
+#network:hover,
+#battery:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Подсказки */
+tooltip {
+    background: rgba(30, 32, 40, 0.95);
+    border: 1px solid rgba(122, 162, 247, 0.3);
+    border-radius: 12px;
+    padding: 8px 12px;
+}
+
+tooltip label {
+    color: #c8d3f5;
+    font-size: 12px;
+}
